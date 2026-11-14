@@ -1,11 +1,11 @@
-# Journal des modifications
+# Changelog
 
-## [Non publié]
+## [Unreleased]
 
 ## [0.1.0] - 2026-11-14
 
-### Ajouté
+### Added
 
-- Skill `hub` (`/hub search|info|install|update|remove|list|outdated`).
-- Déclaration du serveur MCP `agenteca`.
-- Marketplace au format natif de l'outil.
+- `hub` skill (`/hub search|info|install|update|remove|list|outdated`).
+- Declaration of the `agenteca` MCP server, pinned to an exact version.
+- Marketplace file in the tool's native format.

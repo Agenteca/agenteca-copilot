@@ -5,13 +5,13 @@
     "url": "https://github.com/agenteca"
   },
   "metadata": {
-    "description": "Plugins officiels Agenteca pour GitHub Copilot CLI."
+    "description": "Official Agenteca plugins for GitHub Copilot CLI."
   },
   "plugins": [
     {
       "name": "agenteca",
       "source": "./",
-      "description": "Catalogue Agenteca : chercher, lire, installer et mettre à jour des paquets d'agents IA, avec plan montré avant toute écriture.",
+      "description": "Search, inspect, install and update AI agent packages (skills, agents, commands, hooks, MCP servers) from the Agenteca catalog. Every change is shown as a plan before anything is written.",
       "version": "0.1.0"
     }
   ]

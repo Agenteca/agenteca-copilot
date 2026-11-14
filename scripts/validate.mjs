@@ -58,6 +58,8 @@ const mcp = readJson(config.mcp);
 if (mcp) {
   const server = mcp.mcpServers?.agenteca;
   check(server && typeof server.command === 'string' && Array.isArray(server.args), `${config.mcp} : serveur « agenteca » mal déclaré`);
+  const pkg = (server?.args ?? []).find((a) => a.startsWith('@agenteca/mcp'));
+  check(/^@agenteca\/mcp@\d+\.\d+\.\d+$/.test(pkg ?? ''), `${config.mcp} : @agenteca/mcp doit être épinglé à une version exacte (trouvé : ${pkg})`);
 }
 
 if (errors.length > 0) {
