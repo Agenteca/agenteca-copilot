@@ -1,0 +1,18 @@
+{
+  "name": "agenteca",
+  "owner": {
+    "name": "Agenteca",
+    "url": "https://github.com/agenteca"
+  },
+  "metadata": {
+    "description": "Plugins officiels Agenteca pour GitHub Copilot CLI."
+  },
+  "plugins": [
+    {
+      "name": "agenteca",
+      "source": "./",
+      "description": "Catalogue Agenteca : chercher, lire, installer et mettre à jour des paquets d'agents IA, avec plan montré avant toute écriture.",
+      "version": "0.1.0"
+    }
+  ]
+}
