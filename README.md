@@ -4,7 +4,7 @@ Plugin Agenteca pour **GitHub Copilot CLI**. Il ajoute la commande `/hub` et dé
 
 Le plugin ne contient aucune logique : un skill (des consignes) et une déclaration de serveur MCP. Le travail est fait par [`@agenteca/mcp`](https://github.com/agenteca/agenteca-mcp), qui appelle la CLI `ahub`.
 
-> État : 0.1.0, non publié. `@agenteca/mcp` n'est pas encore sur npm : tant que ce n'est pas le cas, le serveur MCP déclaré par ce plugin ne démarrera pas.
+> État : 0.1.0. Le plugin s'installe depuis ce dépôt, mais `@agenteca/mcp` n'est pas encore sur npm : tant que ce n'est pas le cas, le serveur MCP qu'il déclare ne démarrera pas et `/hub` ne pourra s'appuyer que sur la commande `ahub`.
 
 ## Installer
 
