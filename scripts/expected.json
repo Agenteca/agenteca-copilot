@@ -1,0 +1,7 @@
+{
+  "name": "agenteca",
+  "agentPlugins": true,
+  "manifests": [],
+  "marketplace": ".github/plugin/marketplace.json",
+  "mcp": ".mcp.json"
+}
