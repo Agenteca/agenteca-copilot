@@ -50,7 +50,7 @@ for (const dir of readdirSync('skills', { withFileTypes: true }).filter((d) => d
   check(/^[a-z0-9]+(-[a-z0-9]+)*$/.test(name ?? '') && (name ?? '').length <= 64, `${file} : name hors du standard Agent Skills`);
   check(description.length > 0 && description.length <= 1024, `${file} : description de 1 à 1024 caractères attendue`);
   // Aucun caractère invisible dans un texte destiné à un modèle.
-  check(!/[​-‏‪-‮⁠-⁩﻿]|[\u{E0000}-\u{E007F}]/u.test(text), `${file} : caractère invisible détecté`);
+  check(!/[\u200B-\u200F\u202A-\u202E\u2060-\u2069\uFEFF]|[\u{E0000}-\u{E007F}]/u.test(text), `${file} : caractère invisible détecté`);
 }
 
 // Serveur MCP déclaré.
